@@ -13,7 +13,7 @@ public class App
 	
 	public static void vararg(int ... a)
 	{
-		System.out.print(a.length);
+		System.out.println(a.length);
 	}
 	
 	
