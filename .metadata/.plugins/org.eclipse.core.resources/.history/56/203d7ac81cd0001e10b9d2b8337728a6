@@ -1,0 +1,30 @@
+package com.arun.commons.FilesProject;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+	
+	public static void vararg(int...a)
+	{
+		System.out.println(a.length);
+	}
+	
+	
+    public static void main( String[] args ) throws IOException
+    {
+       System.out.println( Files.walk(Paths.get("D:\\arun_desktop\\spring 7AM batch\\spring boot\\class notes\\NTSPBMS715--Final\\Spring Basics"),1).count());
+       System.out.println( Files.walk(Paths.get("D:\\arun_desktop\\spring 7AM batch\\spring\\class notes")).count());
+      
+       int[] a= {2,3};
+       
+       vararg(a);
+       
+    }
+}
